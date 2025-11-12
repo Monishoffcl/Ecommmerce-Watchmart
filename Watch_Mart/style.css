@@ -1,0 +1,403 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Bebas Neue", serif;
+    padding:0px;
+    margin:0px;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    
+    
+}
+
+.navtop{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-left: -70;
+    background-color:white;
+    padding:10px 20px;
+    border-radius: 10px;
+
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+
+}
+.limitedoffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor:pointer;
+}
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem{
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.slider{
+    background-image: url('./img/bg.jpg');
+    height: 300px;
+    overflow: hidden;
+    
+}
+.sliderwrapper{
+    display: flex;
+    width:500vw;
+    transition: all 1s ease-in-out;
+    
+}
+.slideritem{
+    width: 200vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    
+}
+.sliderimg{
+    z-index: 2;
+    height: 10rem;
+    margin-top:  2rem; 
+    }
+/* .sliderbg{ */
+    /* width: 15rem; */
+    /* height: 15rem; */
+    /* border-radius:1000px;  */
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* margin-top: 4rem; */
+    
+/* } */
+
+.slidertitle{
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    font-size:30px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    z-index: 1;
+
+    
+}
+.sliderprice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size:30px;
+    font-weight :100;
+    text-align: center;
+    color: white;
+    z-index: 1;
+
+    
+}
+.buybutton{
+    position: absolute;
+    bottom: -50px;
+    border:white solid;
+    background-color:whitesmoke;
+    cursor: pointer;
+    font-size: 20;
+    font-weight:bold;
+    border-radius: 5px;
+    z-index: 1;
+
+}
+.buybutton:hover{
+    background-color:black;
+    color: silver;
+}
+.slideritem:nth-child(1) .sliderbg{
+    background-color:aqua;
+}
+.slideritem:nth-child(2) .sliderbg{
+    background-color:rgb(55, 173, 55);
+}
+.slideritem:nth-child(3) .sliderbg{
+    background-color:black;
+}
+.slideritem:nth-child(4) .sliderbg{
+    background-color:blueviolet;
+}
+.slideritem:nth-child(5) .sliderbg{
+    background-color:rgb(100, 100, 182);
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.featureimg{
+    width: 50px;
+    height: 50px;
+}
+.featuretitle{
+    font-size:20px;
+    font-weight: 600;
+    margin: 30px;
+
+}
+.featuredes{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+.product{
+    height: 100vh;
+    background-color:whitesmoke;
+    position: relative;
+}
+.payment{
+    width: 500px;
+    height: 525px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding:10 50;
+    display:none;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 9px 36px -4px rgb(14, 7, 7);
+-moz-box-shadow: 9px 9px 36px -4px rgba(0,0,0,0.43);
+box-shadow: 9px 9px 36px -4px rgba(0,0,0,0.43);
+}
+.paytitle{
+    font-size: 20;
+    font-weight: 100;
+    color: rgb(131, 130, 130);
+}
+label{
+    font-size: 14;
+    font-weight: 300;
+}
+.payinput{
+    padding: 10;
+    margin: 10 0;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.payinput::placeholder{
+    color: rgb(160, 157, 157);
+    font-weight:300;
+
+}
+.cardicons{
+    display: flex;
+    
+}
+.cardicon{
+    margin-right: 10px;
+}
+.cardinfo{
+    display:flex ;
+    justify-content: space-between;
+}
+.sm{
+    width: 30%;
+}
+.paybutton{
+    position: absolute;
+    height: 35px;
+    bottom: 7;
+    border-radius: 9px;
+    background-color:white;
+    color:black;
+    cursor: pointer;
+    border:1px solid black;
+}
+.paybutton:hover{
+    background-color: black;
+    color:silver;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+.productimg{
+    width:50%;
+}
+.productdetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 10px;
+}.producttitle{
+    font-size:60;
+    font-weight:300;
+}
+.productdesc{
+    font-size: 15px;
+    color: gray;
+}
+.colours,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.colour{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.colour:last-child{
+    background-color:rgb(9, 9, 119);
+}
+.size{
+    padding: 5px 20px;
+    margin-right: 10px;
+    border:1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+}
+.productbutton{
+    float: right;
+    padding: 10px 20px;
+    background-color:silver;
+    color:black;
+    border-radius: 50px;
+    border: solid silver;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+.productbutton:hover{
+    background-color: black;
+    color: white ;
+
+}
+.gallery{
+    display:flex;
+    padding: 50px;
+}
+.galleryitem{
+    flex:1;
+    margin-right: 10;
+}
+.galleryimg{
+    width: 100%;
+    
+    
+
+}
+.gallerytitle{
+    font-size:30;
+    font-weight: 30;
+    align-items: center;
+    color:black;
+}
+.newseason{
+    display: flex;
+    padding: 0;
+}
+.nsitem{
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.nstitle{
+    font-weight: 12;
+}
+.nstitlesm{
+    font-weight: 1;
+}
+.title{
+    font-weight: 15;
+}
+.nsbutton{
+    padding: 10;
+    font-weight: 600;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+}
+.footerleft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.footerright{
+    flex: 1;
+    margin-top:49;
+}
+.flistitem{
+    font-size: 16px;
+    color: gray;
+    cursor: pointer;
+}
+.fmenulist{
+    padding: 0px;
+    list-style: none;
+}
+.finput{
+    padding: 5;
+    margin-right: 2px; ;
+
+}
+.fmail{
+    display: flex;
+    
+}
+.fbutton{
+    padding: 5;
+    background-color: black;
+    color: silver;
+    cursor:pointer;
+}
+.ficons{
+    display: flex;
+}
+.ficon{
+    width:40;
+    margin-right: 5;
+    cursor: pointer;
+}
